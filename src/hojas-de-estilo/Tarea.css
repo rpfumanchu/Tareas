@@ -1,0 +1,37 @@
+.tarea-contenedor {
+  width: 500px;
+  /*ponemos una altura minima para que si escribimos una tarea muy larga no se salga del cuadro*/
+  min-height: 65px;
+  background-color: #1b1b32;
+  margin: 5px;
+  padding: 8px 15px 8px 20px;
+  display: flex;
+  /*esta vez no usamos center usaremos space-between para que los elemntos se distribullan adecuadamente*/
+  justify-content: space-between;
+  border-radius: 7px;
+  border: ipx solid white;
+  cursor: pointer;
+}
+
+.tarea-texto {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  /*con esto el texto si es demasiado largo va ha ser cortado y va a seguir hacia abajo, 
+  por eso en .tarea-contenedor le asignamos una altura minima y no fija para poder expandirse verticalmente*/
+  overflow-wrap: anywhere;
+}
+
+.tarea-icono {
+  width: 25px;
+  height: 25px;
+  margin: 5px;
+}
+/*tarea completada en esta ocasion tenemos dos pra tarea completada o no*/
+.tarea-contenedor.completada {
+  background-color: #5a01a7;
+  /*con line-through el texto aparecera tachado cuando la tarea este completada*/
+  text-decoration: line-through;
+}
