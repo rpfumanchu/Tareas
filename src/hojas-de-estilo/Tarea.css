@@ -12,6 +12,20 @@
   border: ipx solid white;
   cursor: pointer;
 }
+/*colores*/
+/*para hacer una degradacion de colores usaremo nth-child "el enesimo hijo" 
+cada 3 elementos se va a repetir esa sequencia de colores*/
+.tarea-contenedor:nth-child(3n + 1){
+  background-color: #1b1b32;
+}
+
+.tarea-contenedor:nth-child(3n + 2){
+  background-color: #2a2a40;
+}
+
+.tarea-contenedor:nth-child(3n + 3){
+  background-color: #3b3b4f;
+}
 
 .tarea-texto {
   width: 100%;
